@@ -34,7 +34,7 @@ I built the project in stages, each on its own feature branch merged into `devel
 5. Wrote SQL queries that answer operational questions from the collected data.
 
 ### Architecture
-![Cluster architecture](./assets/architecture.png)
+![Cluster architecture](./assets/Architecture.png)
 
 Each Linux host runs its own copy of the agent (`host_info.sh` and `host_usage.sh`). Every agent sends its data over the network to one PostgreSQL instance, which runs in a Docker container on one of the nodes. The hosts talk to each other through a switch on the internal network.
 
